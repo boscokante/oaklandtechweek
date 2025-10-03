@@ -10,7 +10,7 @@ Welcome to the Oakland Tech Week press kit. Here you'll find all the resources y
 ## Event Information
 
 - **Name**: Oakland Tech Week
-- **Dates**: April 14–18, 2026
+- **Dates**: Nov 10–14, 2025
 - **Location**: Oakland, CA
 - **Website**: https://oaklandtechweek.com
 - **Contact**: hello@oaklandtechweek.com
@@ -51,7 +51,7 @@ For media inquiries, please contact:
 
 ## Press Releases
 
-- [Oakland Tech Week 2026 Announcement](/press/press-release-announcement.pdf)
+- [Oakland Tech Week 2025 Announcement](/press/press-release-announcement.pdf)
 - [Speaker Lineup Revealed](/press/press-release-speakers.pdf)
 
 ## One-Page Summary
