@@ -8,12 +8,14 @@ module.exports = {
         display: ['Space Grotesk', 'system-ui', 'sans-serif'],
       },
       colors: {
+        // HiiiWAV palette
         primary: {
-          DEFAULT: '#0E7C66',
-          600: '#0A5F4E',
+          DEFAULT: '#994DFF', // Purple
+          600: '#7A34CC',
         },
-        accent: '#F59E0B',
-        ink: '#0B1220',
+        accent: '#FF4D16',   // Orange
+        brandGreen: '#99FF69',
+        ink: '#000000',       // Black
       },
       borderRadius: {
         '2xl': '1rem',
