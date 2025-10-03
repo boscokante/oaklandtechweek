@@ -7,9 +7,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://oaklandtechweek.com',
   integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
+    tailwind(),
     mdx(),
     sitemap(),
   ],
@@ -23,3 +21,4 @@ export default defineConfig({
     },
   },
 });
+
