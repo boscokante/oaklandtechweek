@@ -1,5 +1,5 @@
 ---
-name: "Alicia Park"
+name: "Bosko Kante"
 title: "CTO"
 company: "East Bay Robotics"
 photo: "/logos/speaker-placeholder-1.svg"

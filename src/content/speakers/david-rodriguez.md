@@ -1,5 +1,5 @@
 ---
-name: "David Rodriguez"
+name: "Miles Dotson"
 title: "Community Lead"
 company: "Oakland Tech Hub"
 photo: "/logos/speaker-placeholder-4.svg"

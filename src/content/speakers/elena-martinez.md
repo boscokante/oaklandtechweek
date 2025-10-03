@@ -1,5 +1,5 @@
 ---
-name: "Elena Martinez"
+name: "Lili Gangas"
 title: "Founder"
 company: "GreenTech Oakland"
 photo: "/logos/speaker-placeholder-6.svg"

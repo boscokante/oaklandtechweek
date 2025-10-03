@@ -1,5 +1,5 @@
 ---
-name: "Marcus Johnson"
+name: "FirstName, Last Name"
 title: "Founder & CEO"
 company: "Oakland Data Collective"
 photo: "/logos/speaker-placeholder-2.svg"

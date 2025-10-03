@@ -1,5 +1,5 @@
 ---
-name: "Dr. Sarah Chen"
+name: "FirstName, Last Name"
 title: "Research Director"
 company: "Berkeley AI Lab"
 photo: "/logos/speaker-placeholder-3.svg"

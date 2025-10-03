@@ -1,5 +1,5 @@
 ---
-name: "Keisha Thompson"
+name: "Nathan Jones"
 title: "Product Manager"
 company: "Oakland Digital"
 photo: "/logos/speaker-placeholder-8.svg"

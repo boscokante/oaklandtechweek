@@ -1,5 +1,5 @@
 ---
-name: "Robert Kim"
+name: "FirstName, Last Name"
 title: "Managing Partner"
 company: "Oakland Ventures"
 photo: "/logos/speaker-placeholder-7.svg"

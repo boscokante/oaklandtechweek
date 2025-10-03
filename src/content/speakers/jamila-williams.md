@@ -1,5 +1,5 @@
 ---
-name: "Jamila Williams"
+name: "James Norman"
 title: "VP of Engineering"
 company: "Inclusive Tech Solutions"
 photo: "/logos/speaker-placeholder-5.svg"
