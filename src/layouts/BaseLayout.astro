@@ -1,5 +1,5 @@
 ---
-import '../styles/globals.css';
+import '../styles/main.css';
 
 export interface Props {
   title: string;
@@ -42,6 +42,9 @@ const fullUrl = canonical ? `${siteUrl}${canonical}` : Astro.url.href;
     <meta name="twitter:site" content="@oaklandtechweek" />
     
     <title>{title}</title>
+    
+    <!-- Import global styles -->
+    <link rel="stylesheet" href="/styles.css" />
     
     <!-- Cloudflare Web Analytics (commented out) -->
     <!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "your-token-here"}'></script> -->
