@@ -1,0 +1,29 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+
+const press = await getEntry('pages', 'press');
+---
+
+<BaseLayout 
+  title="Press Kit - Oakland Tech Week"
+  description="Media resources and information for covering Oakland Tech Week 2026."
+>
+  <Header />
+  
+  <main id="main">
+    <Section className="pt-24">
+      <div class="max-w-4xl mx-auto">
+        <div class="prose prose-lg max-w-none">
+          <h1 class="text-4xl sm:text-5xl font-display font-bold text-ink mb-8">{press.data.title}</h1>
+          <div set:html={press.body} />
+        </div>
+      </div>
+    </Section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

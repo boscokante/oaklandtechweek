@@ -1,0 +1,130 @@
+[
+  {
+    "day": "2026-04-14",
+    "date": "Monday, April 14",
+    "items": [
+      {
+        "time": "09:00",
+        "title": "Registration & Coffee",
+        "location": "Oakstop",
+        "type": "other"
+      },
+      {
+        "time": "10:00",
+        "title": "Opening Keynote: The Town's Tech Future",
+        "speakers": ["Alicia Park"],
+        "location": "Oakstop",
+        "type": "keynote"
+      },
+      {
+        "time": "11:30",
+        "title": "Panel: AI for Civic Impact",
+        "speakers": ["Marcus Johnson", "Dr. Sarah Chen", "David Rodriguez"],
+        "location": "Oakstop",
+        "type": "panel"
+      },
+      {
+        "time": "13:00",
+        "title": "Lunch & Networking",
+        "location": "Oakstop",
+        "type": "other"
+      },
+      {
+        "time": "14:30",
+        "title": "Workshop: Building Inclusive Tech Teams",
+        "speakers": ["Jamila Williams"],
+        "location": "Oakstop",
+        "type": "workshop"
+      },
+      {
+        "time": "16:00",
+        "title": "Fireside Chat: From Startup to Scale",
+        "speakers": ["Elena Martinez", "Robert Kim"],
+        "location": "Oakstop",
+        "type": "fireside"
+      }
+    ]
+  },
+  {
+    "day": "2026-04-15",
+    "date": "Tuesday, April 15",
+    "items": [
+      {
+        "time": "09:30",
+        "title": "Morning Coffee & Check-in",
+        "location": "Oakstop",
+        "type": "other"
+      },
+      {
+        "time": "10:30",
+        "title": "Keynote: Sustainable Tech in the East Bay",
+        "speakers": ["Dr. Sarah Chen"],
+        "location": "Oakstop",
+        "type": "keynote"
+      },
+      {
+        "time": "12:00",
+        "title": "Panel: The Future of Work",
+        "speakers": ["Marcus Johnson", "Jamila Williams", "Elena Martinez"],
+        "location": "Oakstop",
+        "type": "panel"
+      },
+      {
+        "time": "13:30",
+        "title": "Lunch Break",
+        "location": "Oakstop",
+        "type": "other"
+      },
+      {
+        "time": "15:00",
+        "title": "Workshop: Community-Driven Development",
+        "speakers": ["David Rodriguez"],
+        "location": "Oakstop",
+        "type": "workshop"
+      },
+      {
+        "time": "16:30",
+        "title": "Closing: Building the Next Decade",
+        "speakers": ["Robert Kim"],
+        "location": "Oakstop",
+        "type": "keynote"
+      }
+    ]
+  },
+  {
+    "day": "2026-04-16",
+    "date": "Wednesday, April 16",
+    "items": [
+      {
+        "time": "TBD",
+        "title": "More sessions coming soon",
+        "location": "TBD",
+        "type": "other"
+      }
+    ]
+  },
+  {
+    "day": "2026-04-17",
+    "date": "Thursday, April 17",
+    "items": [
+      {
+        "time": "TBD",
+        "title": "More sessions coming soon",
+        "location": "TBD",
+        "type": "other"
+      }
+    ]
+  },
+  {
+    "day": "2026-04-18",
+    "date": "Friday, April 18",
+    "items": [
+      {
+        "time": "TBD",
+        "title": "More sessions coming soon",
+        "location": "TBD",
+        "type": "other"
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0E7C66"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#gradient)"/>
+  <text x="600" y="200" font-family="Space Grotesk, sans-serif" font-size="80" font-weight="700" fill="white" text-anchor="middle">Oakland Tech Week</text>
+  <text x="600" y="300" font-family="Inter, sans-serif" font-size="32" font-weight="400" fill="#FFFFFF" text-anchor="middle">April 14–18, 2026</text>
+  <text x="600" y="360" font-family="Inter, sans-serif" font-size="24" font-weight="400" fill="#F59E0B" text-anchor="middle">At the heart of Oakland's tech community</text>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E7C66"/>
+      <stop offset="100%" stop-color="#0E7C66" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+</svg>

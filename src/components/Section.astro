@@ -1,0 +1,14 @@
+---
+export interface Props {
+  id?: string;
+  className?: string;
+}
+
+const { id, className = '' } = Astro.props;
+---
+
+<section id={id} class={`section-padding ${className}`}>
+  <div class="max-w-7xl mx-auto container-padding">
+    <slot />
+  </div>
+</section>

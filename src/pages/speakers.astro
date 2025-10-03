@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+import SpeakerCard from '../components/SpeakerCard.astro';
+
+const speakers = await getCollection('speakers');
+---
+
+<BaseLayout 
+  title="Speakers - Oakland Tech Week"
+  description="Meet the innovators, entrepreneurs, and community leaders speaking at Oakland Tech Week 2026."
+>
+  <Header />
+  
+  <main id="main">
+    <Section className="pt-24">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl sm:text-5xl font-display font-bold text-ink mb-6">Speakers</h1>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+          Meet the innovators, entrepreneurs, and community leaders shaping Oakland's tech future.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {speakers.map((speaker) => (
+          <SpeakerCard 
+            name={speaker.data.name}
+            title={speaker.data.title}
+            company={speaker.data.company}
+            photo={speaker.data.photo}
+            bio={speaker.data.bio}
+            links={speaker.data.links}
+          />
+        ))}
+      </div>
+    </Section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

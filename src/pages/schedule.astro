@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+import scheduleData from '../data/schedule.json';
+---
+
+<BaseLayout 
+  title="Schedule - Oakland Tech Week"
+  description="View the complete schedule for Oakland Tech Week 2026, featuring talks, workshops, and networking events."
+>
+  <Header />
+  
+  <main id="main">
+    <Section className="pt-24">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl sm:text-5xl font-display font-bold text-ink mb-6">Schedule</h1>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+          Five days of inspiring talks, hands-on workshops, and networking opportunities.
+        </p>
+      </div>
+      
+      <div class="max-w-6xl mx-auto space-y-12">
+        {scheduleData.map((day) => (
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-3xl font-display font-bold text-ink mb-8 text-center">
+              {day.date}
+            </h2>
+            
+            <div class="space-y-6">
+              {day.items.map((item) => (
+                <div class="flex items-start space-x-6 p-6 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors duration-200">
+                  <div class="flex-shrink-0 w-24 text-center">
+                    <div class="text-lg font-semibold text-primary">{item.time}</div>
+                  </div>
+                  
+                  <div class="flex-1">
+                    <h3 class="text-xl font-semibold text-ink mb-2">{item.title}</h3>
+                    {item.speakers && (
+                      <p class="text-slate-600 mb-2">
+                        <span class="font-medium">Speakers:</span> {item.speakers.join(', ')}
+                      </p>
+                    )}
+                    <p class="text-slate-500">
+                      📍 {item.location}
+                    </p>
+                  </div>
+                  
+                  <div class="flex-shrink-0">
+                    <span class={`badge ${
+                      item.type === 'keynote' ? 'badge-primary' :
+                      item.type === 'panel' ? 'badge-accent' :
+                      item.type === 'workshop' ? 'badge-gray' :
+                      item.type === 'fireside' ? 'badge-primary' :
+                      'badge-gray'
+                    }`}>
+                      {item.type}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </Section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

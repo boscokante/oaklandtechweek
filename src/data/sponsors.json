@@ -1,0 +1,35 @@
+{
+  "platinum": [
+    {
+      "name": "East Bay Innovation",
+      "logo": "/logos/placeholder-platinum.svg",
+      "url": "#"
+    }
+  ],
+  "gold": [
+    {
+      "name": "Oakland Ventures",
+      "logo": "/logos/placeholder-gold.svg",
+      "url": "#"
+    }
+  ],
+  "silver": [
+    {
+      "name": "TechTown Oakland",
+      "logo": "/logos/placeholder-silver.svg",
+      "url": "#"
+    }
+  ],
+  "community": [
+    {
+      "name": "Oakland Tech Meetup",
+      "logo": "/logos/placeholder-community.svg",
+      "url": "#"
+    },
+    {
+      "name": "East Bay Developers",
+      "logo": "/logos/placeholder-community2.svg",
+      "url": "#"
+    }
+  ]
+}

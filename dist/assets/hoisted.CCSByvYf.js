@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.querySelector(".mobile-menu-button"),t=document.querySelector(".mobile-menu");e&&t&&e.addEventListener("click",function(){const n=e.getAttribute("aria-expanded")==="true";t.classList.toggle("hidden"),e.setAttribute("aria-expanded",String(!n))})});

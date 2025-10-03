@@ -1,0 +1,29 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+
+const codeOfConduct = await getEntry('pages', 'code-of-conduct');
+---
+
+<BaseLayout 
+  title="Code of Conduct - Oakland Tech Week"
+  description="Our commitment to creating an inclusive and respectful environment for all participants at Oakland Tech Week."
+>
+  <Header />
+  
+  <main id="main">
+    <Section className="pt-24">
+      <div class="max-w-4xl mx-auto">
+        <div class="prose prose-lg max-w-none">
+          <h1 class="text-4xl sm:text-5xl font-display font-bold text-ink mb-8">{codeOfConduct.data.title}</h1>
+          <div set:html={codeOfConduct.body} />
+        </div>
+      </div>
+    </Section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

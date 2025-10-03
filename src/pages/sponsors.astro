@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+import SponsorTier from '../components/SponsorTier.astro';
+import sponsorsData from '../data/sponsors.json';
+---
+
+<BaseLayout 
+  title="Sponsors - Oakland Tech Week"
+  description="Meet our amazing sponsors who make Oakland Tech Week possible. Learn about sponsorship opportunities."
+>
+  <Header />
+  
+  <main id="main">
+    <Section className="pt-24">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl sm:text-5xl font-display font-bold text-ink mb-6">Our Sponsors</h1>
+        <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+          Thank you to our amazing sponsors who make Oakland Tech Week possible.
+        </p>
+      </div>
+      
+      <div class="space-y-8">
+        {Object.entries(sponsorsData).map(([tier, sponsors]) => (
+          <SponsorTier tier={tier} sponsors={sponsors} />
+        ))}
+      </div>
+      
+      <!-- Sponsorship Opportunities -->
+      <div class="mt-16 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-display font-bold text-ink mb-4">Interested in Sponsoring?</h2>
+          <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+            Join us in supporting Oakland's tech community. Download our sponsorship prospectus to learn about opportunities.
+          </p>
+          <a 
+            href="/press/sponsorship-prospectus.pdf" 
+            class="btn-primary"
+            target="_blank"
+            rel="noopener"
+          >
+            Download Prospectus
+          </a>
+        </div>
+      </div>
+    </Section>
+  </main>
+  
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,82 @@
+---
+// No props needed
+---
+
+<section id="newsletter" class="section-padding bg-primary text-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl sm:text-5xl font-display font-bold mb-6">Stay Updated</h2>
+    <p class="text-xl mb-12 text-primary-100">
+      Get the latest news about speakers, schedule updates, and exclusive content.
+    </p>
+    
+    <form 
+      action="https://formspree.io/f/your-form-id" 
+      method="POST" 
+      class="max-w-md mx-auto"
+    >
+      <!-- Honeypot field for spam protection -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+      
+      <div class="flex flex-col sm:flex-row gap-4">
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="Enter your email"
+          required
+          class="flex-1 px-6 py-4 rounded-2xl text-ink placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
+        />
+        <button 
+          type="submit" 
+          class="px-8 py-4 bg-white text-primary font-semibold rounded-2xl hover:bg-slate-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
+        >
+          Subscribe
+        </button>
+      </div>
+      
+      <p class="text-sm text-primary-100 mt-4">
+        We respect your privacy. Unsubscribe at any time.
+      </p>
+    </form>
+    
+    <!-- Success/Error states (progressive enhancement) -->
+    <div id="form-success" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-xl">
+      Thanks for subscribing! We'll keep you updated.
+    </div>
+    
+    <div id="form-error" class="hidden mt-4 p-4 bg-red-100 text-red-800 rounded-xl">
+      Something went wrong. Please try again.
+    </div>
+  </div>
+</section>
+
+<script>
+  // Progressive enhancement for form feedback
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    const successDiv = document.getElementById('form-success');
+    const errorDiv = document.getElementById('form-error');
+    
+    if (form) {
+      form.addEventListener('submit', function() {
+        // Hide any previous messages
+        if (successDiv) successDiv.classList.add('hidden');
+        if (errorDiv) errorDiv.classList.add('hidden');
+        
+        // Show loading state (optional)
+        const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+        if (submitBtn) {
+          submitBtn.textContent = 'Subscribing...';
+          submitBtn.disabled = true;
+        }
+      });
+    }
+    
+    // Check for URL parameters to show success/error messages
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true' && successDiv) {
+      successDiv.classList.remove('hidden');
+    } else if (urlParams.get('error') === 'true' && errorDiv) {
+      errorDiv.classList.remove('hidden');
+    }
+  });
+</script>

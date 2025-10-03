@@ -1,0 +1,62 @@
+---
+import scheduleData from '../data/schedule.json';
+
+const day1 = scheduleData[0]; // First day
+const featuredItems = day1.items.slice(0, 3); // First 3 items
+---
+
+<section id="schedule" class="section-padding">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl sm:text-5xl font-display font-bold text-ink mb-6">Schedule Preview</h2>
+    <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+      Get a taste of what's coming during Oakland Tech Week.
+    </p>
+  </div>
+  
+  <div class="max-w-4xl mx-auto">
+    <div class="bg-white rounded-2xl shadow-lg p-8">
+      <h3 class="text-2xl font-display font-semibold text-ink mb-8 text-center">
+        {day1.date}
+      </h3>
+      
+      <div class="space-y-6">
+        {featuredItems.map((item) => (
+          <div class="flex items-start space-x-4 p-4 bg-slate-50 rounded-xl">
+            <div class="flex-shrink-0">
+              <div class="w-20 text-center">
+                <div class="text-sm font-medium text-primary">{item.time}</div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h4 class="text-lg font-semibold text-ink mb-1">{item.title}</h4>
+              {item.speakers && (
+                <p class="text-slate-600 text-sm mb-2">
+                  Speakers: {item.speakers.join(', ')}
+                </p>
+              )}
+              <p class="text-slate-500 text-sm">
+                📍 {item.location}
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <span class={`badge ${
+                item.type === 'keynote' ? 'badge-primary' :
+                item.type === 'panel' ? 'badge-accent' :
+                item.type === 'workshop' ? 'badge-gray' :
+                'badge-gray'
+              }`}>
+                {item.type}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center mt-12">
+    <a href="/schedule" class="btn-primary">
+      See Full Schedule
+    </a>
+  </div>
+</section>
