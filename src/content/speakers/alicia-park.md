@@ -1,11 +1,11 @@
 ---
 name: "Bosko Kante"
-title: "CTO"
-company: "East Bay Robotics"
+title: "CEO"
+company: "HiiiWAV"
 photo: "/logos/speaker-placeholder-1.svg"
-bio: "Alicia leads AI and robotics initiatives that bridge the gap between cutting-edge technology and community impact. She's passionate about making advanced tech accessible to underserved communities and has been instrumental in Oakland's growing tech ecosystem."
+bio: "CEO and Co-founder of ElectroSpit Inc., and President, Founder, and Executive Director of HiiiWAV. Grammy-winning music producer and mechanical engineer who invented the patented ElectroSpit ESX-1 TalkBox. Through HiiiWAV, he empowers artists with AI and VR skills to thrive in the digital age."
 links:
-  twitter: "https://x.com/aliciapark"
-  linkedin: "https://www.linkedin.com/in/aliciapark"
-  website: "https://aliciapark.dev"
+  twitter: "https://x.com/boscokante"
+  linkedin: "https://www.linkedin.com/in/boscokante"
+  website: "https://hiiiwav.org"
 ---

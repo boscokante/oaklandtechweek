@@ -1,11 +1,11 @@
 ---
 name: "FirstName, Last Name"
-title: "Founder & CEO"
-company: "Oakland Data Collective"
+title: "TBD"
+company: "TBD"
 photo: "/logos/speaker-placeholder-2.svg"
-bio: "Marcus is a data scientist and entrepreneur focused on using technology to address social inequities. His work in predictive analytics for community health has gained national recognition, and he's a vocal advocate for ethical AI development."
+bio: "Bio coming soon."
 links:
-  twitter: "https://x.com/marcusjohnson"
-  linkedin: "https://www.linkedin.com/in/marcusjohnson"
-  website: "https://marcusjohnson.tech"
+  twitter: ""
+  linkedin: ""
+  website: ""
 ---

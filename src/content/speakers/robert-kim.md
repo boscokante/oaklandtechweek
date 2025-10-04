@@ -1,11 +1,11 @@
 ---
 name: "FirstName, Last Name"
-title: "Managing Partner"
-company: "Oakland Ventures"
+title: "TBD"
+company: "TBD"
 photo: "/logos/speaker-placeholder-7.svg"
-bio: "Robert is a venture capitalist and former startup founder who has been investing in Oakland-based tech companies for over 15 years. He's passionate about building a sustainable tech ecosystem in the East Bay and has helped launch over 50 local startups."
+bio: "Bio coming soon."
 links:
-  twitter: "https://x.com/robertkim"
-  linkedin: "https://www.linkedin.com/in/robertkim"
-  website: "https://robertkim.ventures"
+  twitter: ""
+  linkedin: ""
+  website: ""
 ---
