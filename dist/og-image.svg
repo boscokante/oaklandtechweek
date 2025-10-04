@@ -2,7 +2,7 @@
   <rect width="1200" height="630" fill="#0E7C66"/>
   <rect x="0" y="0" width="1200" height="630" fill="url(#gradient)"/>
   <text x="600" y="200" font-family="Space Grotesk, sans-serif" font-size="80" font-weight="700" fill="white" text-anchor="middle">Oakland Tech Week</text>
-  <text x="600" y="300" font-family="Inter, sans-serif" font-size="32" font-weight="400" fill="#FFFFFF" text-anchor="middle">Nov 10–14, 2025</text>
+  <text x="600" y="300" font-family="Inter, sans-serif" font-size="32" font-weight="400" fill="#FFFFFF" text-anchor="middle">Nov 12–14, 2025</text>
   <text x="600" y="360" font-family="Inter, sans-serif" font-size="24" font-weight="400" fill="#F59E0B" text-anchor="middle">At the heart of Oakland's tech community</text>
   <defs>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
