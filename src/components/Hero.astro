@@ -2,36 +2,132 @@
 // No props needed
 ---
 
-<section class="relative bg-gradient-to-br from-primary/5 via-white to-accent/5 min-h-screen flex items-center">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-    <div class="text-center">
-      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-display font-bold text-ink mb-6 text-balance">
-        Oakland Tech Week
-      </h1>
-      <p class="text-xl sm:text-2xl text-slate-600 mb-8 max-w-3xl mx-auto text-balance">
-        A week of talks, workshops, and founder meetups in the Town.
-      </p>
-      
-      <!-- Date and Location Badges -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-        <div class="badge badge-primary text-lg px-6 py-3">
-          📅 Nov 12–14, 2025
+<section class="relative min-h-screen flex flex-col items-center justify-between overflow-hidden bg-primary">
+  <!-- Video Background (placeholder - you'll need to add your actual video) -->
+  <div class="absolute inset-0 z-0">
+    <!-- For now, using animated gradient as placeholder for video -->
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-500 to-purple-700 animate-pulse"></div>
+    <!-- When you have video file, uncomment and use:
+    <video autoplay muted loop playsinline class="video-background">
+      <source src="/videos/purple-background.mp4" type="video/mp4">
+    </video>
+    -->
+  </div>
+
+  <!-- Top Section -->
+  <div class="relative z-10 w-full pt-8 px-4">
+    <div class="flex items-center justify-between max-w-7xl mx-auto">
+      <div class="text-brandGreen text-xs sm:text-sm font-display tracking-wider uppercase">
+        Oakland Tech Week 2025
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-full px-6 py-2">
+        <span class="text-white text-sm font-display tracking-wide uppercase">Save the Date</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="relative z-10 flex-1 flex items-center justify-center w-full px-4 py-12">
+    <div class="text-center max-w-6xl mx-auto">
+      <!-- Main Headline with Overlapping Text -->
+      <div class="relative mb-8">
+        <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-serif italic text-brandGreen leading-none mb-4 relative z-20">
+          Tech<span class="inline-block" style="font-style: normal; font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Week</span>
+        </h1>
+        
+        <!-- Overlapping elements -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+          <div class="text-white text-4xl sm:text-5xl md:text-6xl font-display font-bold opacity-80">
+            OAKLAND
+          </div>
         </div>
-        <div class="badge badge-accent text-lg px-6 py-3">
-          📍 Oakland, CA
+        
+        <div class="text-brandGreen text-7xl sm:text-8xl md:text-9xl font-display font-bold leading-none relative z-30">
+          2025
         </div>
       </div>
-      
-      <!-- CTAs -->
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="https://example.com/tickets" class="btn-primary text-lg px-8 py-4" target="_blank" rel="noopener">
-          Get Tickets
-        </a>
-        <a href="#newsletter" class="btn-secondary text-lg px-8 py-4">
-          Get Updates
-        </a>
+
+      <!-- Date Badge -->
+      <div class="inline-flex items-center bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-full px-8 py-3 mb-12">
+        <span class="text-white text-lg sm:text-xl font-display tracking-wide">NOV 12TH-14TH</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Section with Green Background -->
+  <div class="relative z-10 w-full bg-brandGreen py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <p class="text-xl sm:text-2xl font-display text-ink mb-3 uppercase tracking-tight">
+        November 12th - 14th
+      </p>
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-serif italic text-ink mb-8 leading-tight">
+        Three days of innovation in Oakland.
+      </h2>
+      <p class="text-base sm:text-lg text-ink/80 font-mono max-w-2xl mx-auto leading-relaxed">
+        From The Block Panthers to Blockchain. Culture has always been the source code.
+        Save the date for the Town's First Tech Week.
+      </p>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+      <a 
+        href="https://example.com/tickets" 
+        class="bg-primary text-white px-12 py-4 rounded-full font-display text-lg uppercase tracking-wide hover:bg-purple-600 transition-all hover:scale-105"
+        target="_blank" 
+        rel="noopener"
+      >
+        Save My Spot
+      </a>
+      <a 
+        href="#host" 
+        class="bg-primary text-white px-12 py-4 rounded-full font-display text-lg uppercase tracking-wide hover:bg-purple-600 transition-all hover:scale-105"
+      >
+        Host an Event
+      </a>
+      <a 
+        href="#sponsors" 
+        class="bg-primary text-white px-12 py-4 rounded-full font-display text-lg uppercase tracking-wide hover:bg-purple-600 transition-all hover:scale-105"
+      >
+        Partner with Us
+      </a>
+    </div>
+
+    <!-- Powered By Section -->
+    <div class="max-w-5xl mx-auto">
+      <p class="text-center text-sm uppercase tracking-wider font-display text-ink/60 mb-8">
+        Powered By
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-16">
+        <!-- Northeastern Logo -->
+        <div class="flex items-center">
+          <img src="/logos/northeastern-logo.svg" alt="Northeastern University" class="h-12 sm:h-16 w-auto" />
+        </div>
+        
+        <!-- HiiiWAV Logo -->
+        <div class="flex items-center">
+          <img src="/logos/hiiiwav-logo.svg" alt="HiiiWAV" class="h-16 sm:h-20 w-auto" />
+        </div>
+        
+        <!-- Kapor Center Logo -->
+        <div class="flex items-center">
+          <img src="/logos/kapor-logo.svg" alt="Kapor Center" class="h-12 sm:h-16 w-auto" />
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Marquee -->
+<div class="marquee">
+  <div class="marquee-content">
+    <span class="marquee-item">The Town's First Tech Week</span>
+    <span class="marquee-item">The Town's First Tech Week</span>
+    <span class="marquee-item">The Town's First Tech Week</span>
+    <span class="marquee-item">The Town's First Tech Week</span>
+    <span class="marquee-item">The Town's First Tech Week</span>
+    <span class="marquee-item">The Town's First Tech Week</span>
+    <span class="marquee-item">The Town's First Tech Week</span>
+    <span class="marquee-item">The Town's First Tech Week</span>
+  </div>
+</div>
