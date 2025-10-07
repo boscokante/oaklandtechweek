@@ -6,31 +6,22 @@ const speakers = await getCollection('speakers');
 const featuredSpeakers = speakers.slice(0, 6); // Show first 6 speakers
 ---
 
-<section id="speakers" class="section-padding bg-slate-50">
-  <div class="text-center mb-16">
-    <h2 class="text-4xl sm:text-5xl font-display font-bold text-ink mb-6">Featured Speakers</h2>
-    <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-      Meet the innovators, entrepreneurs, and community leaders shaping Oakland's tech future.
-    </p>
-  </div>
-  
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-    {featuredSpeakers.map((speaker) => (
-      <SpeakerCard 
-        name={speaker.data.name}
-        title={speaker.data.title}
-        company={speaker.data.company}
-        photo={speaker.data.photo}
-        bio={speaker.data.bio}
-        links={speaker.data.links}
-      />
-    ))}
-  </div>
-  
-  <div class="text-center">
-    <a href="/speakers" class="btn-primary">
-      View All Speakers
-    </a>
-  </div>
-</section>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+  {featuredSpeakers.map((speaker) => (
+    <SpeakerCard 
+      name={speaker.data.name}
+      title={speaker.data.title}
+      company={speaker.data.company}
+      photo={speaker.data.photo}
+      bio={speaker.data.bio}
+      links={speaker.data.links}
+    />
+  ))}
+</div>
+
+<div class="text-center">
+  <a href="/speakers" class="bg-primary text-white px-12 py-4 rounded-full font-display text-lg uppercase tracking-wide hover:bg-purple-600 transition-all hover:scale-105 inline-block">
+    View All Speakers
+  </a>
+</div>
 

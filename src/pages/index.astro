@@ -1,6 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
+import SpeakersTeaser from '../components/SpeakersTeaser.astro';
+import ScheduleTeaser from '../components/ScheduleTeaser.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import SponsorTier from '../components/SponsorTier.astro';
+import sponsorsData from '../data/sponsors.json';
 ---
 
 <BaseLayout 
@@ -9,6 +14,124 @@ import Hero from '../components/Hero.astro';
 >
   <main id="main">
     <Hero />
+    
+    <!-- Speakers Section -->
+    <section class="bg-white py-24 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl sm:text-6xl md:text-7xl font-serif italic text-ink mb-6">Featured Speakers</h2>
+          <p class="text-xl text-ink/70 max-w-3xl mx-auto font-mono">
+            Learn from Oakland's innovators, entrepreneurs, and community leaders.
+          </p>
+        </div>
+        <SpeakersTeaser />
+      </div>
+    </section>
+    
+    <!-- Schedule Section -->
+    <section class="bg-brandGreen py-24 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl sm:text-6xl md:text-7xl font-serif italic text-ink mb-6">Schedule</h2>
+          <p class="text-xl text-ink/70 max-w-3xl mx-auto font-mono">
+            Three days of talks, workshops, and networking.
+          </p>
+        </div>
+        <ScheduleTeaser />
+      </div>
+    </section>
+    
+    <!-- Venue Section -->
+    <section id="venue" class="bg-primary py-24 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl sm:text-6xl md:text-7xl font-serif italic text-white mb-6">Venue</h2>
+          <p class="text-xl text-white/80 max-w-3xl mx-auto font-mono">
+            Join us at the heart of Oakland's tech community.
+          </p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-2xl p-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="text-white">
+                <h3 class="text-3xl font-display font-bold mb-6">Kapor Center</h3>
+                <div class="space-y-4">
+                  <p class="flex items-start">
+                    <span class="text-brandGreen mr-3 text-xl">📍</span>
+                    <span class="font-mono">2148 Broadway, Oakland, CA 94612</span>
+                  </p>
+                  <p class="flex items-start">
+                    <span class="text-brandGreen mr-3 text-xl">🚇</span>
+                    <span class="font-mono">5 min walk from 19th St BART</span>
+                  </p>
+                  <p class="flex items-start">
+                    <span class="text-brandGreen mr-3 text-xl">🅿️</span>
+                    <span class="font-mono">Street parking and garages nearby</span>
+                  </p>
+                  <p class="flex items-start">
+                    <span class="text-brandGreen mr-3 text-xl">♿</span>
+                    <span class="font-mono">Fully accessible venue</span>
+                  </p>
+                </div>
+              </div>
+              <div>
+                <iframe 
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-122.2730%2C37.8070%2C-122.2670%2C37.8110&layer=mapnik&marker=37.8090%2C-122.2700"
+                  width="100%" 
+                  height="300" 
+                  style="border:0; border-radius: 1rem;"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Kapor Center location map"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-12">
+            <a href="/venue" class="bg-brandGreen text-ink px-12 py-4 rounded-full font-display text-lg uppercase tracking-wide hover:bg-green-400 transition-all hover:scale-105 inline-block">
+              Venue Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="bg-white py-24 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl sm:text-6xl md:text-7xl font-serif italic text-ink mb-6">Our Sponsors</h2>
+          <p class="text-xl text-ink/70 max-w-3xl mx-auto font-mono">
+            Thank you to our amazing sponsors who make Oakland Tech Week possible.
+          </p>
+        </div>
+        
+        <div class="space-y-8">
+          {Object.entries(sponsorsData).map(([tier, sponsors]) => (
+            <SponsorTier tier={tier} sponsors={sponsors} />
+          ))}
+        </div>
+        
+        <div class="text-center mt-12">
+          <a href="/sponsors" class="bg-primary text-white px-12 py-4 rounded-full font-display text-lg uppercase tracking-wide hover:bg-purple-600 transition-all hover:scale-105 inline-block">
+            View All Sponsors
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="bg-brandGreen py-24 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-5xl sm:text-6xl md:text-7xl font-serif italic text-ink mb-6">Stay Updated</h2>
+        <p class="text-xl text-ink/70 mb-12 font-mono">
+          Get the latest news, speaker announcements, and event updates.
+        </p>
+        <NewsletterForm />
+      </div>
+    </section>
   </main>
 </BaseLayout>
 

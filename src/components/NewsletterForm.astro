@@ -2,41 +2,34 @@
 // No props needed
 ---
 
-<section id="newsletter" class="section-padding bg-primary text-white">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl sm:text-5xl font-display font-bold mb-6">Stay Updated</h2>
-    <p class="text-xl mb-12 text-primary-100">
-      Get the latest news about speakers, schedule updates, and exclusive content.
-    </p>
-    
-    <form 
-      action="https://formspree.io/f/your-form-id" 
-      method="POST" 
-      class="max-w-md mx-auto"
+<form 
+  action="https://formspree.io/f/your-form-id" 
+  method="POST" 
+  class="max-w-md mx-auto"
+>
+  <!-- Honeypot field for spam protection -->
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+  
+  <div class="flex flex-col sm:flex-row gap-4">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="your@email.com"
+      required
+      class="flex-1 px-6 py-4 rounded-full text-ink font-mono placeholder-ink/40 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 border-2 border-ink/20"
+    />
+    <button 
+      type="submit" 
+      class="px-12 py-4 bg-primary text-white font-display rounded-full uppercase tracking-wide hover:bg-purple-600 transition-all hover:scale-105"
     >
-      <!-- Honeypot field for spam protection -->
-      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-      
-      <div class="flex flex-col sm:flex-row gap-4">
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="Enter your email"
-          required
-          class="flex-1 px-6 py-4 rounded-2xl text-ink placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
-        />
-        <button 
-          type="submit" 
-          class="px-8 py-4 bg-white text-primary font-semibold rounded-2xl hover:bg-slate-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary"
-        >
-          Subscribe
-        </button>
-      </div>
-      
-      <p class="text-sm text-primary-100 mt-4">
-        We respect your privacy. Unsubscribe at any time.
-      </p>
-    </form>
+      Subscribe
+    </button>
+  </div>
+  
+  <p class="text-sm text-ink/60 mt-4 font-mono">
+    We respect your privacy. Unsubscribe at any time.
+  </p>
+</form>
     
     <!-- Success/Error states (progressive enhancement) -->
     <div id="form-success" class="hidden mt-4 p-4 bg-green-100 text-green-800 rounded-xl">
