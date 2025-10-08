@@ -5,8 +5,9 @@ module.exports = {
     extend: {
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['Space Grotesk', 'system-ui', 'sans-serif'],
-            serif: ['Playfair Display', 'Georgia', 'serif'],
+            display: ['Instrument Serif', 'Georgia', 'serif'],
+            serif: ['Instrument Serif', 'Georgia', 'serif'],
+            mono: ['Space Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'monospace'],
           },
       colors: {
         // HiiiWAV palette
