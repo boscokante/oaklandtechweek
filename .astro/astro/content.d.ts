@@ -203,27 +203,6 @@ declare module 'astro:content' {
   collection: "speakers";
   data: InferEntrySchema<"speakers">
 } & { render(): Render[".md"] };
-"marcus-johnson.md": {
-	id: "marcus-johnson.md";
-  slug: "marcus-johnson";
-  body: string;
-  collection: "speakers";
-  data: InferEntrySchema<"speakers">
-} & { render(): Render[".md"] };
-"robert-kim.md": {
-	id: "robert-kim.md";
-  slug: "robert-kim";
-  body: string;
-  collection: "speakers";
-  data: InferEntrySchema<"speakers">
-} & { render(): Render[".md"] };
-"sarah-chen.md": {
-	id: "sarah-chen.md";
-  slug: "sarah-chen";
-  body: string;
-  collection: "speakers";
-  data: InferEntrySchema<"speakers">
-} & { render(): Render[".md"] };
 };
 
 	};

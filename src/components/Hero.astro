@@ -8,8 +8,8 @@
 
   <!-- Top Section -->
   <!-- Header Section -->
-  <div class="relative z-10 w-full pt-8 px-4">
-    <div class="w-full" style="background: linear-gradient(to bottom, #DC2626, transparent); backdrop-filter: blur(8px);">
+  <div class="relative z-10 w-full">
+    <div class="w-full" style="background: linear-gradient(to bottom, #DC2626, transparent); backdrop-filter: blur(8px); padding-top: 0.5rem;">
       <div class="flex items-center justify-center max-w-7xl mx-auto py-4">
         <div class="text-brandGreen text-lg sm:text-xl font-space-mono tracking-wider uppercase" style="font-weight: 900;">
           Oakland Tech Week 2025
@@ -18,7 +18,7 @@
     </div>
     
     <!-- Top Marquee -->
-    <div class="marquee" style="background: rgba(153, 255, 105, 0.1); backdrop-filter: blur(8px); border-top: 2px solid #99FF69; border-bottom: 2px solid #99FF69; padding: 6px 0;">
+    <div class="marquee relative z-50" style="background: rgba(153, 255, 105, 0.1); backdrop-filter: blur(8px); border-top: 2px solid #99FF69; border-bottom: 2px solid #99FF69; padding: 6px 0;">
       <div class="marquee-content">
         <span class="marquee-item" style="color: #99FF69; font-family: 'Instrument Serif', Georgia, serif; font-size: 1.2em; padding: 0 1.5rem;">The Town's First Tech Week</span>
         <span class="marquee-item" style="color: #99FF69; font-family: 'Instrument Serif', Georgia, serif; font-size: 1.2em; padding: 0 1.5rem;">The Town's First Tech Week</span>
@@ -33,30 +33,30 @@
   </div>
 
   <!-- Main Content -->
-  <div class="relative z-10 flex-1 flex items-center justify-center w-full px-4 py-12">
-    <div class="text-center max-w-6xl mx-auto">
+  <div class="relative z-10 flex-1 flex items-center justify-center w-full px-4 py-12 overflow-visible" style="margin-top: 0; padding-top: 0.5rem;">
+    <div class="text-center max-w-6xl mx-auto w-full">
       <!-- Main Headline with Overlapping Text -->
-      <div class="relative mb-8">
-        <h1 class="text-[12rem] sm:text-[16rem] md:text-[20rem] lg:text-[32rem] font-serif italic text-brandGreen leading-none mb-2 relative z-20" style="line-height: 0.7;">
+      <div class="relative mb-8 overflow-visible px-4 sm:px-8 md:px-12">
+        <h1 class="text-[8rem] sm:text-[12rem] md:text-[16rem] lg:text-[24rem] xl:text-[32rem] font-serif italic text-brandGreen leading-none mb-2 relative z-20" style="line-height: 0.7; max-width: 100%;">
             <div class="leading-none" style="margin-right: 1.1em; margin-left: -1em;">Tech</div>
-          <div class="leading-none flex items-center" style="margin-top: -0.28em; margin-left: -2em;">
-            <span class="text-[8rem] sm:text-[10rem] md:text-[12rem] lg:text-[20rem] mr-8">2025</span>
-            <span>Week</span>
+          <div class="leading-none flex items-center flex-wrap" style="margin-top: -0.28em; margin-left: 0.5em; max-width: 100%;">
+            <span class="text-[3rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] xl:text-[16rem] mr-4 sm:mr-6 md:mr-8">2025</span>
+            <span style="max-width: 100%; overflow: visible;">Week</span>
           </div>
         </h1>
         
         <!-- Overlapping elements -->
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40">
           <!-- Save the Date Button -->
-          <div class="absolute top-[-6rem] right-[-20rem] bg-black/30 backdrop-blur-sm border-2 border-brandGreen rounded-full px-8 py-4">
-            <div class="text-brandGreen text-2xl sm:text-3xl md:text-4xl font-space-mono opacity-100" style="font-weight: 900;">
+          <div class="absolute top-[-8rem] sm:top-[-10rem] md:top-[-13rem] right-[-5rem] sm:right-[-10rem] md:right-[-15rem] lg:right-[-20rem] bg-black/30 backdrop-blur-sm border-2 border-brandGreen rounded-full px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4">
+            <div class="text-brandGreen text-lg sm:text-2xl md:text-3xl lg:text-4xl font-space-mono opacity-100" style="font-weight: 900;">
               SAVE THE DATE
             </div>
           </div>
           
           <!-- Oakland Button -->
-          <div class="bg-black/30 backdrop-blur-sm border-2 border-white/30 rounded-full px-8 py-4">
-            <div class="text-brandGreen text-2xl sm:text-3xl md:text-4xl font-space-mono opacity-100" style="font-weight: 900;">
+          <div class="bg-black/30 backdrop-blur-sm border-2 border-brandGreen rounded-full px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4" style="margin-top: -3rem; sm:margin-top: -4rem; md:margin-top: -6rem;">
+            <div class="text-brandGreen text-xl sm:text-3xl md:text-4xl lg:text-5xl font-space-mono opacity-100" style="font-weight: 900;">
               OAKLAND
             </div>
           </div>
@@ -64,8 +64,8 @@
       </div>
 
       <!-- Date Badge -->
-      <div class="inline-flex items-center bg-black/30 backdrop-blur-sm border-2 border-white/30 rounded-full px-8 py-4 mb-12 relative z-40">
-        <span class="text-brandGreen text-2xl sm:text-3xl md:text-4xl font-space-mono tracking-wide" style="font-weight: 900;">NOV 10TH-14TH</span>
+      <div class="inline-flex items-center bg-black/30 backdrop-blur-sm border-2 border-brandGreen rounded-full px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 absolute z-40 left-1/2 transform -translate-x-1/2" style="bottom: 1rem;">
+        <span class="text-brandGreen text-lg sm:text-2xl md:text-3xl lg:text-4xl font-space-mono tracking-wide" style="font-weight: 900;">NOV 10TH-14TH</span>
       </div>
     </div>
   </div>
@@ -76,7 +76,7 @@
       <p class="text-2xl sm:text-3xl md:text-4xl font-serif text-brandGreen mb-3 uppercase tracking-tight" style="font-weight: 900;">
         November 10th - 14th
       </p>
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-serif text-ink mb-8 leading-tight">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-serif text-ink mb-3 leading-tight">
         Five days of innovation in Oakland.
       </h2>
       <p class="text-lg sm:text-xl text-ink/80 font-serif max-w-2xl mx-auto leading-relaxed">

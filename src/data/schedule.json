@@ -1,47 +1,105 @@
 [
   {
-    "day": "2025-11-12",
-    "date": "Wednesday, Nov 12",
+    "day": "2025-11-10",
+    "date": "Monday, Nov 10",
     "items": [
       {
         "time": "09:00",
         "title": "Registration & Coffee",
-        "location": "Oakstop",
+        "location": "Kapor Center",
         "type": "other"
       },
       {
         "time": "10:00",
         "title": "Opening Keynote: The Town's Tech Future",
-        "speakers": ["Alicia Park"],
-        "location": "Oakstop",
+        "speakers": ["TBD"],
+        "location": "Kapor Center",
         "type": "keynote"
       },
       {
         "time": "11:30",
         "title": "Panel: AI for Civic Impact",
-        "speakers": ["Marcus Johnson", "Dr. Sarah Chen", "David Rodriguez"],
-        "location": "Oakstop",
+        "speakers": ["TBD"],
+        "location": "Kapor Center",
         "type": "panel"
       },
       {
         "time": "13:00",
         "title": "Lunch & Networking",
-        "location": "Oakstop",
+        "location": "Kapor Center",
         "type": "other"
       },
       {
         "time": "14:30",
         "title": "Workshop: Building Inclusive Tech Teams",
-        "speakers": ["Jamila Williams"],
-        "location": "Oakstop",
+        "speakers": ["TBD"],
+        "location": "Kapor Center",
         "type": "workshop"
       },
       {
         "time": "16:00",
         "title": "Fireside Chat: From Startup to Scale",
-        "speakers": ["Elena Martinez", "Robert Kim"],
-        "location": "Oakstop",
+        "speakers": ["TBD"],
+        "location": "Kapor Center",
         "type": "fireside"
+      }
+    ]
+  },
+  {
+    "day": "2025-11-11",
+    "date": "Tuesday, Nov 11",
+    "items": [
+      {
+        "time": "09:30",
+        "title": "Morning Coffee & Check-in",
+        "location": "Kapor Center",
+        "type": "other"
+      },
+      {
+        "time": "10:30",
+        "title": "Keynote: Sustainable Tech in the East Bay",
+        "speakers": ["TBD"],
+        "location": "Kapor Center",
+        "type": "keynote"
+      },
+      {
+        "time": "12:00",
+        "title": "Panel: The Future of Work",
+        "speakers": ["TBD"],
+        "location": "Kapor Center",
+        "type": "panel"
+      },
+      {
+        "time": "13:30",
+        "title": "Lunch Break",
+        "location": "Kapor Center",
+        "type": "other"
+      },
+      {
+        "time": "15:00",
+        "title": "Workshop: Community-Driven Development",
+        "speakers": ["TBD"],
+        "location": "Kapor Center",
+        "type": "workshop"
+      },
+      {
+        "time": "16:30",
+        "title": "Closing: Building the Next Decade",
+        "speakers": ["TBD"],
+        "location": "Kapor Center",
+        "type": "keynote"
+      }
+    ]
+  },
+  {
+    "day": "2025-11-12",
+    "date": "Wednesday, Nov 12",
+    "items": [
+      {
+        "time": "TBD",
+        "title": "More sessions coming soon",
+        "location": "TBD",
+        "type": "other"
       }
     ]
   },
@@ -50,44 +108,10 @@
     "date": "Thursday, Nov 13",
     "items": [
       {
-        "time": "09:30",
-        "title": "Morning Coffee & Check-in",
-        "location": "Oakstop",
+        "time": "TBD",
+        "title": "More sessions coming soon",
+        "location": "TBD",
         "type": "other"
-      },
-      {
-        "time": "10:30",
-        "title": "Keynote: Sustainable Tech in the East Bay",
-        "speakers": ["Dr. Sarah Chen"],
-        "location": "Oakstop",
-        "type": "keynote"
-      },
-      {
-        "time": "12:00",
-        "title": "Panel: The Future of Work",
-        "speakers": ["Marcus Johnson", "Jamila Williams", "Elena Martinez"],
-        "location": "Oakstop",
-        "type": "panel"
-      },
-      {
-        "time": "13:30",
-        "title": "Lunch Break",
-        "location": "Oakstop",
-        "type": "other"
-      },
-      {
-        "time": "15:00",
-        "title": "Workshop: Community-Driven Development",
-        "speakers": ["David Rodriguez"],
-        "location": "Oakstop",
-        "type": "workshop"
-      },
-      {
-        "time": "16:30",
-        "title": "Closing: Building the Next Decade",
-        "speakers": ["Robert Kim"],
-        "location": "Oakstop",
-        "type": "keynote"
       }
     ]
   },
@@ -102,30 +126,5 @@
         "type": "other"
       }
     ]
-  },
-  {
-    "day": "2025-11-12",
-    "date": "Wednesday, Nov 12",
-    "items": [
-      {
-        "time": "TBD",
-        "title": "More sessions coming soon",
-        "location": "TBD",
-        "type": "other"
-      }
-    ]
-  },
-  {
-    "day": "2025-11-13",
-    "date": "Thursday, Nov 13",
-    "items": [
-      {
-        "time": "TBD",
-        "title": "More sessions coming soon",
-        "location": "TBD",
-        "type": "other"
-      }
-    ]
   }
 ]
-
